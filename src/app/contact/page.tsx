@@ -167,18 +167,18 @@ export default function ContactPage() {
                  <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Contact Information</h3>
                     <div className="space-y-4 text-muted-foreground">
-                        <a href="mailto:contact@tagconsol.com" className="flex items-center gap-3 group">
+                        <a href="mailto:contact@tapconsol.com" className="flex items-center gap-3 group">
                             <Mail className="h-5 w-5 text-primary"/>
-                            <span className="group-hover:text-foreground transition-colors">contact@tagconsol.com</span>
+                            <span className="group-hover:text-foreground transition-colors">contact@tapconsol.com</span>
                         </a>
                         <div className="flex items-center gap-3">
                             <Phone className="h-5 w-5 text-primary"/>
-                            <span>+91 9876543210</span>
+                            <span>+91 9849499631</span>
                         </div>
-                         <div className="flex items-center gap-3">
+                         {/* <div className="flex items-center gap-3">
                             <Building className="h-5 w-5 text-primary"/>
                             <span>Banjara Hills, Hyderabad</span>
-                        </div>
+                        </div> */}
                     </div>
                  </Card>
 

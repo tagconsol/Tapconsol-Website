@@ -36,14 +36,14 @@ export function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-end">
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
-            <Link href="mailto:contact@tagconsol.com" className="text-muted-foreground hover:text-foreground transition-colors">
-              contact@tagconsol.com
+            <Link href="mailto:contact@tapconsol.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              contact@tapconsol.com
             </Link>
-            <p className="text-muted-foreground mt-1">+91 9876543210</p>
+            <p className="text-muted-foreground mt-1">+91 9849499631</p>
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Tagconsol Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tapconsol Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Tagconsol',
-  description: 'Tagconsol: Integrated hardware and software solutions.',
+  title: 'Tapconsol',
+  description: 'Tapconsol: Integrated hardware and software solutions.',
 };
 
 export default function RootLayout({

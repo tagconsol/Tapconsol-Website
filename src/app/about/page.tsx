@@ -73,7 +73,7 @@ export default function AboutPage() {
                             Our Story
                         </h2>
                         <div className="text-lg text-muted-foreground space-y-6">
-                            <p>Founded on a passion for engineering excellence, Tagconsol was built to solve the complex challenges that live at the intersection of hardware and software.</p>
+                            <p>Founded on a passion for engineering excellence, Tapconsol was built to solve the complex challenges that live at the intersection of hardware and software.</p>
                             <p>We saw a critical need for a partner who could not just advise, but truly build and own the entire technology stack—from custom sensor design to the intelligent cloud platforms that make sense of the data. Today, we are that end-to-end partner for a growing number of clients across diverse industries, turning ambitious ideas into robust, real-world solutions.</p>
                         </div>
                     </div>
