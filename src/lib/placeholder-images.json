@@ -1,0 +1,112 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "An abstract image of a circuit board and cloud data, representing technology.",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-285f7267a84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzE0NzA3NzM5fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "solution-smart-cities",
+      "description": "A bustling smart city with interconnected data streams.",
+      "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21hcnQlMjBjaXR5fGVufDB8fHx8MTc2OTAxMDEwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart city"
+    },
+    {
+      "id": "solution-climate",
+      "description": "A landscape showing the effects of climate change with data overlays.",
+      "imageUrl": "https://images.unsplash.com/photo-1690203178211-589fa80baa95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aW5kJTIwdHVyYmluZXN8ZW58MHx8fHwxNzY4OTQzNDk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wind turbines"
+    },
+    {
+      "id": "solution-water",
+      "description": "A water reservoir with sensor data visualizations.",
+      "imageUrl": "https://images.unsplash.com/photo-1658282903775-833d2c60c435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXRlciUyMGRhbXxlbnwwfHx8fDE3NjkwMTAxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water dam"
+    },
+    {
+      "id": "solution-agriculture",
+      "description": "A modern farm with drones and sensors monitoring crops.",
+      "imageUrl": "https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZ3JpY3VsdHVyZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY4OTk4Nzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agriculture technology"
+    },
+    {
+      "id": "solution-urban-planning",
+      "description": "A 3D model of a city being planned.",
+      "imageUrl": "https://images.unsplash.com/photo-1629463495600-a3bc6dd22014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaXR5JTIwbW9kZWx8ZW58MHx8fHwxNzY4OTQwODY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city model"
+    },
+    {
+      "id": "solution-flood-risk",
+      "description": "A flooded city street, showing the risks of climate change.",
+      "imageUrl": "https://images.unsplash.com/photo-1567472282210-6743b0abaece?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG9vZGVkJTIwY2l0eXxlbnwwfHx8fDE3NjkwMTAyMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flooded city"
+    },
+    {
+      "id": "gis-platform",
+      "description": "A 3D GIS platform showing a city map with data points.",
+      "imageUrl": "https://images.unsplash.com/photo-1757820470004-fe7d9f6d57a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXAlMjBkYXRhfGVufDB8fHx8MTc2ODk4ODQyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map data"
+    },
+    {
+      "id": "case-study-1",
+      "description": "Cover image for a case study on urban mobility.",
+      "imageUrl": "https://images.unsplash.com/photo-1547036560-fb9ba5c4667c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaXR5JTIwdHJhZmZpY3xlbnwwfHx8fDE3NjkwMDMwMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city traffic"
+    },
+    {
+      "id": "case-study-2",
+      "description": "Cover image for a whitepaper on IoT in agriculture.",
+      "imageUrl": "https://images.unsplash.com/photo-1741665839377-8722ba14cc79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzbWFydCUyMGZhcm18ZW58MHx8fHwxNzY5MDEwMTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart farm"
+    },
+    {
+      "id": "case-study-3",
+      "description": "Cover image for a case study on legacy system modernization.",
+      "imageUrl": "https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VydmVyJTIwcm9vbXxlbnwwfHx8fDE3NjkwMDk0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "server room"
+    },
+    {
+      "id": "smart-living-gis",
+      "description": "An illustration of a smart city with various icons representing services like safety, recycling, and transport, all connected in a network.",
+      "imageUrl": "https://images.unsplash.com/photo-1585562643111-1dd954d6c47e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzbWFydCUyMGNpdHklMjBpbGx1c3RyYXRpb258ZW58MHx8fHwxNzY5MDg2NjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smart city illustration"
+    },
+    {
+      "id": "iot-monitoring",
+      "description": "A dashboard showing various metrics for IoT environmental monitoring.",
+      "imageUrl": "https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8fHwxNzY5MDM0NDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "software-dev",
+      "description": "Illustration of software and firmware development process.",
+      "imageUrl": "https://images.unsplash.com/photo-1624996739343-4952670a35f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2OTA5MjQ1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software development"
+    },
+    {
+      "id": "medical-supply",
+      "description": "A collection of various medical supplies and equipment in a clean environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1516549655169-df83a0774514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2OTEwODU3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
+    },
+    {
+      "id": "industrial-supply",
+      "description": "A large industrial warehouse with shelves stocked with various materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1605874562078-a56ae6b710a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYWN0b3J5JTIwd2FyZWhvdXNlfGVufDB8fHx8MTc2OTE0OTA3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "factory warehouse"
+    },
+    {
+      "id": "electrical-supply",
+      "description": "A close-up of a complex electronic circuit board.",
+      "imageUrl": "https://images.unsplash.com/photo-1667670778881-537035257bd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaXJjdWl0JTIwYm9hcmR8ZW58MHx8fHwxNzY5MDk0MjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "circuit board"
+    },
+    {
+      "id": "civil-supply",
+      "description": "A construction site with heavy machinery and building materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDB8fHx8MTc2OTA0NTU1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction site"
+    }
+  ]
+}
