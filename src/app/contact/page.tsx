@@ -20,7 +20,7 @@ import { toast } from '@/hooks/use-toast';
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Mail, Phone, MessageSquare, User, Briefcase } from 'lucide-react';
+import { Mail, Phone, MessageSquare, User, Briefcase, MapPin } from 'lucide-react';
 import { Github, Twitter, Linkedin } from "lucide-react";
 import Link from 'next/link';
 
@@ -211,6 +211,13 @@ export default function ContactPage() {
                             <span>+91 98494 99631</span>
                         </div>
                     </div>
+                 </Card>
+                   <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
+                    <h3 className="text-2xl font-semibold text-foreground mb-4">Our Address</h3>
+                    <address className="flex items-start gap-3 text-muted-foreground not-italic">
+                        <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                        <p>H.No: 1-41/6, Shanthinagar, Hydershakote, Hyderabad, Telangana - 500091</p>
+                    </address>
                  </Card>
 
                  <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
