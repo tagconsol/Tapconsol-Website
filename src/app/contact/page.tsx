@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -42,6 +43,7 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -53,13 +55,42 @@ export default function ContactPage() {
     },
   });
 
-  function onSubmit(data: ContactFormValues) {
-    console.log(data);
-    toast({
-      title: 'Message Sent!',
-      description: "We've received your message and will get back to you shortly.",
-    });
-    form.reset();
+  async function onSubmit(data: ContactFormValues) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('https://formspree.io/f/mlgbjbqy', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast({
+          title: 'Message Sent!',
+          description: "We've received your message and will get back to you shortly.",
+        });
+        form.reset();
+      } else {
+        const responseData = await response.json();
+        const errorMessage = responseData.errors?.map((err: { message: string }) => err.message).join(', ') || 'An unknown error occurred.';
+        toast({
+            variant: 'destructive',
+            title: 'Uh oh! Something went wrong.',
+            description: `Could not send message. ${errorMessage}`,
+        });
+      }
+    } catch (error) {
+      toast({
+        variant: 'destructive',
+        title: 'Uh oh! Something went wrong.',
+        description: 'There was a problem sending your message. Please try again.',
+      });
+    } finally {
+        setIsSubmitting(false);
+    }
   }
 
   return (
@@ -155,8 +186,8 @@ export default function ContactPage() {
                           </FormItem>
                         )}
                       />
-                      <Button type="submit" size="lg" className="w-full">
-                        Send Message
+                      <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
                       </Button>
                     </form>
                   </Form>
@@ -167,13 +198,14 @@ export default function ContactPage() {
                  <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Contact Information</h3>
                     <div className="space-y-4 text-muted-foreground">
-                        <a href="mailto:contact@tapconsol.com" className="flex items-center gap-3 group">
+                        <a href="mailto:contact@tagconsol.com" className="flex items-center gap-3 group">
                             <Mail className="h-5 w-5 text-primary"/>
                             <span className="group-hover:text-foreground transition-colors">contact@tapconsol.com</span>
                         </a>
                         <div className="flex items-center gap-3">
                             <Phone className="h-5 w-5 text-primary"/>
-                            <span>+91 9849499631</span>
+                            <span>+91 99638 43862</span>
+                            <span>+91 98494 99631</span>
                         </div>
                          {/* <div className="flex items-center gap-3">
                             <Building className="h-5 w-5 text-primary"/>
@@ -182,7 +214,7 @@ export default function ContactPage() {
                     </div>
                  </Card>
 
-                 <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
+                 {/* <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Connect with Us</h3>
                     <p className="text-muted-foreground mb-4">Follow us on our social media channels.</p>
                      <div className="flex space-x-2">
@@ -202,7 +234,7 @@ export default function ContactPage() {
                             </Link>
                         </Button>
                     </div>
-                 </Card>
+                 </Card> */}
               </div>
             </div>
           </div>

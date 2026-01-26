@@ -39,7 +39,8 @@ export function Footer() {
             <Link href="mailto:contact@tapconsol.com" className="text-muted-foreground hover:text-foreground transition-colors">
               contact@tapconsol.com
             </Link>
-            <p className="text-muted-foreground mt-1">+91 9849499631</p>
+            <p className="text-muted-foreground mt-1">+91 99638 43862</p>
+            <p className="text-muted-foreground mt-1">+91 98494 99631</p>
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">
