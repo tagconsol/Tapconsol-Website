@@ -20,7 +20,7 @@ import { toast } from '@/hooks/use-toast';
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Mail, Phone, Building, MessageSquare, User, Briefcase } from 'lucide-react';
+import { Mail, Phone, MessageSquare, User, Briefcase } from 'lucide-react';
 import { Github, Twitter, Linkedin } from "lucide-react";
 import Link from 'next/link';
 
@@ -198,23 +198,22 @@ export default function ContactPage() {
                  <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Contact Information</h3>
                     <div className="space-y-4 text-muted-foreground">
-                        <a href="mailto:contact@tagconsol.com" className="flex items-center gap-3 group">
+                        <a href="mailto:contact@tapconsol.com" className="flex items-center gap-3 group">
                             <Mail className="h-5 w-5 text-primary"/>
                             <span className="group-hover:text-foreground transition-colors">contact@tapconsol.com</span>
                         </a>
                         <div className="flex items-center gap-3">
                             <Phone className="h-5 w-5 text-primary"/>
                             <span>+91 99638 43862</span>
+                        </div>
+                         <div className="flex items-center gap-3">
+                            <Phone className="h-5 w-5 text-primary"/>
                             <span>+91 98494 99631</span>
                         </div>
-                         {/* <div className="flex items-center gap-3">
-                            <Building className="h-5 w-5 text-primary"/>
-                            <span>Banjara Hills, Hyderabad</span>
-                        </div> */}
                     </div>
                  </Card>
 
-                 {/* <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
+                 <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Connect with Us</h3>
                     <p className="text-muted-foreground mb-4">Follow us on our social media channels.</p>
                      <div className="flex space-x-2">
@@ -234,7 +233,7 @@ export default function ContactPage() {
                             </Link>
                         </Button>
                     </div>
-                 </Card> */}
+                 </Card>
               </div>
             </div>
           </div>

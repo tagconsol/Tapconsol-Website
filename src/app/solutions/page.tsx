@@ -6,6 +6,12 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Solutions",
+  description: "Discover our industry-leading solutions in Environmental Intelligence, Agricultural Technology, and Platform & GIS, designed to turn complex data into actionable intelligence.",
+};
 
 const solutionsByCategory = [
   {

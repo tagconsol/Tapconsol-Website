@@ -1,13 +1,18 @@
 
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Header } from "@/components/landing/header";
 import { Footer } from "@/components/landing/footer";
 import { CtaSection } from "@/components/landing/cta-section";
 import { Badge } from "@/components/ui/badge";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Combine, Lightbulb, Handshake, Cpu, Bot } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn about Tap Consol's story, our mission to build robust intelligent systems, and our core values of integrated expertise, pragmatic innovation, and collaborative partnership.",
+};
 
 const values = [
     {
@@ -45,8 +50,6 @@ const ExpertiseBlock = ({ icon, title, description, image, reverse = false }: { 
 };
 
 export default function AboutPage() {
-    const storyImage = PlaceHolderImages.find((img) => img.id === 'case-study-3');
-
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
@@ -77,17 +80,14 @@ export default function AboutPage() {
                             <p>We saw a critical need for a partner who could not just advise, but truly build and own the entire technology stack—from custom sensor design to the intelligent cloud platforms that make sense of the data. Today, we are that end-to-end partner for a growing number of clients across diverse industries, turning ambitious ideas into robust, real-world solutions.</p>
                         </div>
                     </div>
-                     <div className="rounded-xl overflow-hidden shadow-2xl">
-                        {storyImage && (
+                     <div className="flex items-center justify-center rounded-xl bg-card p-12 shadow-lg border">
                         <Image
-                            src={storyImage.imageUrl}
-                            alt={storyImage.description}
-                            width={800}
-                            height={600}
-                            className="w-full h-auto object-cover aspect-[4/3]"
-                            data-ai-hint={storyImage.imageHint}
+                            src="/logomain.png"
+                            alt="Tap Consol Logo"
+                            width={340}
+                            height={340}
+                            className="w-auto"
                         />
-                        )}
                     </div>
                 </div>
             </div>
