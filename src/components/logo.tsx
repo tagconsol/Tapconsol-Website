@@ -13,7 +13,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
         x="0"
         y="40"
         fontFamily="'Inter', sans-serif"
-        fontSize="40"
+        fontSize="30"
         fontWeight="600"
         fill="currentColor"
         className="text-primary"
