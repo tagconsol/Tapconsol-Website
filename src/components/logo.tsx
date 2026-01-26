@@ -18,7 +18,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
         className="text-primary"
       >
-        Tapconsol
+        Tap Consol
       </text>
     </svg>
   );
