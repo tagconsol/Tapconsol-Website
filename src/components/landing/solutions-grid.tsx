@@ -12,49 +12,67 @@ import {
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import React from "react";
+import { cn } from "@/lib/utils";
 
 const solutions = [
   {
-    icon: <Landmark className="w-10 h-10 text-white" />,
+    icon: <Landmark />,
     name: "Smart Cities & Urban Planning",
     imageId: "solution-smart-cities",
+    description: "Integrated solutions for traffic management, public safety, and resource optimization.",
+    className: "lg:col-span-2 lg:row-span-2",
   },
   {
-    icon: <AirVent className="w-10 h-10 text-white" />,
+    icon: <AirVent />,
     name: "Air Quality Monitoring",
     imageId: "iot-monitoring",
+    description: "High-precision sensors and data analytics for environmental tracking.",
+    className: "lg:col-span-2",
   },
   {
-    icon: <Leaf className="w-10 h-10 text-white" />,
+    icon: <Leaf />,
     name: "Environmental Monitoring",
     imageId: "solution-climate",
+    description: "Track carbon emissions, weather patterns, and support sustainability initiatives.",
+    className: "lg:col-span-1",
   },
   {
-    icon: <Waves className="w-10 h-10 text-white" />,
-    name: "Flood Modeling & Climate Risk Assessment",
+    icon: <Waves />,
+    name: "Flood Modeling & Climate Risk",
     imageUrl: "/fra.jpg",
     imageAlt: "Flood modeling and climate risk assessment",
+    description: "Simulate and predict flood impact to de-risk and plan effective emergency responses.",
+    className: "lg:col-span-1",
   },
   {
-    icon: <Droplets className="w-10 h-10 text-white" />,
-    name: "Groundwater & Water Resource Management",
+    icon: <Droplets />,
+    name: "Water Resource Management",
     imageId: "solution-water",
+    description: "Intelligent systems for monitoring water quality, flow, and consumption to conserve resources.",
+    className: "lg:col-span-2",
   },
   {
-    icon: <Tractor className="w-10 h-10 text-white" />,
+    icon: <Tractor />,
     name: "Agriculture & Crop Yield Analysis",
     imageId: "solution-agriculture",
+    description: "Smart farming technology to boost yields and optimize resource usage with actionable data.",
+    className: "lg:col-span-2",
   },
   {
-    icon: <Thermometer className="w-10 h-10 text-white" />,
+    icon: <Thermometer />,
     name: "Weather Monitoring Systems",
     imageId: "gis-platform",
+    description: "Real-time weather data collection and analysis for accurate forecasting and alerts.",
+    className: "lg:col-span-2",
   },
   {
-    icon: <Siren className="w-10 h-10 text-white" />,
-    name: "Disaster Impact & Exposure Analysis",
+    icon: <Siren />,
+    name: "Disaster Impact Analysis",
     imageUrl: "/diea.jpg",
     imageAlt: "Disaster impact and exposure analysis",
+    description: "Assess and visualize the impact of disasters for more effective emergency response.",
+    className: "lg:col-span-2",
   },
 ];
 
@@ -71,7 +89,7 @@ export function SolutionsGrid() {
             We adapt our core technologies to deliver powerful, domain-specific solutions that address critical challenges in both public and private sectors.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((solution, index) => {
             const typedSolution = solution as any;
             const imageFromPlaceholder = typedSolution.imageId ? PlaceHolderImages.find(img => img.id === typedSolution.imageId) : null;
@@ -83,23 +101,34 @@ export function SolutionsGrid() {
             return (
               <Card
                 key={index}
-                className="group relative flex flex-col items-center justify-center text-center p-6 bg-card text-card-foreground shadow-sm hover:shadow-xl transition-all duration-300 h-52 overflow-hidden rounded-lg"
+                className={cn(
+                  "group relative w-full overflow-hidden rounded-xl shadow-lg min-h-[20rem]",
+                  typedSolution.className
+                )}
               >
                 {imageUrl && (
                   <Image
                     src={imageUrl}
                     alt={imageAlt}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="z-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                     {...(imageHint && { 'data-ai-hint': imageHint })}
                   />
                 )}
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center text-white">
-                  <div className="mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">{solution.icon}</div>
-                  <h3 className="text-base font-semibold leading-snug flex-grow flex items-center">
-                    {solution.name}
-                  </h3>
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+                <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 text-white">
+                    <h3 className="text-xl font-bold leading-tight">{solution.name}</h3>
+                    <div className="max-h-0 opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-40 group-hover:opacity-100">
+                        <div className="flex items-start gap-3 pt-4">
+                            <div className="flex-shrink-0 text-accent">
+                                {React.cloneElement(solution.icon, { className: "w-6 h-6" })}
+                            </div>
+                            <p className="text-sm text-white/80">
+                                {typedSolution.description}
+                            </p>
+                        </div>
+                    </div>
                 </div>
               </Card>
             );

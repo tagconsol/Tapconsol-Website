@@ -212,14 +212,13 @@ export default function ContactPage() {
                         </div>
                     </div>
                  </Card>
-                   <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
+                 <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Our Address</h3>
                     <address className="flex items-start gap-3 text-muted-foreground not-italic">
                         <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                         <p>H.No: 1-41/6, Shanthinagar, Hydershakote, Hyderabad, Telangana - 500091</p>
                     </address>
                  </Card>
-
                  <Card className="bg-card/50 border-border/50 p-6 shadow-lg">
                     <h3 className="text-2xl font-semibold text-foreground mb-4">Connect with Us</h3>
                     <p className="text-muted-foreground mb-4">Follow us on our social media channels.</p>

@@ -9,7 +9,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <Link href="/">
               <Image
-                src="/logomain.png"
+                src="/newlogo.png"
                 alt="Tap Consol Logo"
                 width={100}
                 height={100}
@@ -42,6 +42,7 @@ export function Footer() {
             </Link>
             <p className="text-muted-foreground mt-1">+91 99638 43862</p>
             <p className="text-muted-foreground mt-1">+91 98494 99631</p>
+           
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">

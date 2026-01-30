@@ -123,6 +123,18 @@ const services = [
       "Pilot Production",
     ],
   },
+  {
+    title: "Creative & Modern Visuals",
+    imageUrl: "/services/animations.jpg",
+    imageAlt: "Digital animation and creative visuals",
+    description: "Struggling to explain your product? Let us animate it. We bridge the gap between technical specs and human connection through dynamic animation and high-energy presentations. Whether you're launching a new SaaS platform or a physical product, we create the 'scroll-stopping' visuals that turn viewers into users.",
+    competenciesTitle: "Our Visual Services Include:",
+    competencies: [
+      "Explainer Videos: 2D and 3D animations that make sense of your big ideas.",
+      "Product Walkthroughs: Guided demos that highlight features and solve pain points.",
+      "Deck Design: Modern, interactive presentations that leave a lasting impression.",
+    ],
+  },
 ];
 
 const devLanguages = {
@@ -238,17 +250,19 @@ const ServiceItem = ({ service, reverse = false }: { service: any, reverse?: boo
             </div>
         </div>
 
-        <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">{service.competenciesTitle}</h3>
-            <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 text-muted-foreground">
-                {service.competencies.map((item: string) => (
-                    <li key={item} className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{item}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        {service.competencies && service.competencies.length > 0 && (
+            <div className="mt-12">
+                <h3 className="text-2xl font-semibold text-foreground mb-6">{service.competenciesTitle}</h3>
+                <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 text-muted-foreground">
+                    {service.competencies.map((item: string) => (
+                        <li key={item} className="flex items-start gap-3">
+                            <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )}
 
         {service.protocols && service.protocols.length > 0 && (
             <div className="mt-12">

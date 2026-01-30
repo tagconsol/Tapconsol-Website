@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Logo() {
   return (
     <Image
-      src="/logomain1.png"
+      src="/newlogo.png"
       alt="Tap Consol Logo"
       width={190}
       height={190}

@@ -82,7 +82,7 @@ export default function AboutPage() {
                     </div>
                      <div className="flex items-center justify-center rounded-xl bg-card p-12 shadow-lg border">
                         <Image
-                            src="/logomain.png"
+                            src="/newlogo.png"
                             alt="Tap Consol Logo"
                             width={340}
                             height={340}
